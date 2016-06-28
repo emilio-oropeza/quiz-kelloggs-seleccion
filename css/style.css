@@ -1,0 +1,157 @@
+.img-center{
+	margin: auto;
+}
+.abs-center{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	margin: auto;
+}
+article{
+	overflow: hidden;
+	font-family: "Roboto", sans-serif;
+}
+section{
+	height: 100%;
+}
+#portada{
+	background-image: url("../images/Portada/Fondo_portada.jpg");
+	background-size: auto 100%;
+	background-position: top center;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+	#portada > .container{
+		position: relative;
+		height: 100%;
+	}
+	#portada > .container > img{
+		position: absolute;
+		left: 0px;
+		right: 0px;
+	}
+	#portada > .container > #portada-titulo{top: 20%;}
+	#portada > .container > #portada-btn{top: 30%; cursor: pointer;}
+	#portada > .container > #portada-jugadores{bottom: 10px;}
+#preguntas{
+	position: relative;
+	background-image: url("../images/Preguntas/fondo_quiz-k.png");
+	background-size: cover;
+	background-position: center center;
+	font-family: 'Roboto Condensed', sans-serif;
+	overflow: hidden;
+}
+	#preguntas > .container{
+		position: relative;
+	}
+	#preguntas  > .container > img{
+		position: absolute;
+		top: 10px;
+	}
+	#preguntas  > .container > img:nth-child(1){
+		left: 0px;
+	}
+	#preguntas  > .container > img:nth-child(2){
+		right: 0px;
+	}
+	#preguntas-scroll{
+		position: absolute;
+		top: 0px;
+		width: 100%;
+	}
+	.preguntas-container {
+	    position: relative;
+	}
+	.pregunta > img{
+		display: none;
+	}
+	.pregunta-cont {
+	    background-color: #fff;
+	    border-radius: 10px;
+	    border: 2px solid;
+	    width: 90%;
+	    margin: auto;
+	    padding: 10px 10px;
+	}
+	.pregunta-cont > .row:nth-child(1){
+		text-align: center;
+		padding: 20px 0px;
+		font-weight: 700;
+		text-transform: uppercase;
+		font-size: 18px;
+	}
+	.pregunta-cont > .row:nth-child(2) > div,
+	.pregunta-cont > .row:nth-child(3) > div{
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.pregunta-cont > .row > div{
+		cursor: pointer;
+	}
+	.pregunta-cont > .row > div > .media > .media-left > span{
+		display: inline-block;
+		width: 48px;
+		height: 48px;
+		background-color: #51a0c4;
+		color: #fff;
+		border-radius: 50%;
+		line-height: 45px;
+		text-align: center;
+		border: 2px solid #000;
+	}
+	.pregunta-cont > .row > div:hover > .media > .media-left > span,
+	.pregunta-cont > .row > div:focus > .media > .media-left > span{
+		background-color: #e7797d;
+	}
+#resultado{
+	background-image: url("../images/Resultados/Fondo_resultado.jpg");
+	background-size: auto 100%;
+	background-position: top center;
+	background-repeat: no-repeat;
+	height: 100%;
+	color: #fff;
+	font-size: 16px;
+	line-height: 28px;
+	text-align: center;
+}
+	#resultado > .container{
+		position: relative;
+		height: 100%;
+	}
+	#resultado > .container > .row{
+		height: 265px;
+	}
+	#resultado > .container > .row > div{
+		position: relative;
+		height: 100%;
+	}
+	.row-share{
+		margin-top: 10px;
+	}
+
+@media screen and (max-height: 450px) {
+	#portada > .container > #portada-titulo{top: 10px;}
+	#portada > .container > #portada-btn{top: 75px;}
+	#portada > .container > #portada-jugadores{width: 170px}
+}
+
+@media screen and (max-height: 700px) {
+	#portada > .container > #portada-titulo {top: 10%;}
+	#portada > .container > #portada-jugadores{width: 400px;}
+}
+
+@media screen and (min-width: 768px) {
+	#portada{
+		background-size: cover;
+	}
+	#portada > .container > #portada-titulo{top: 105px;}
+	#portada > .container > #portada-btn{top: 200px;}
+	#portada > .container > #portada-jugadores{bottom: 40px;}	
+	.pregunta > img{
+		display: block;
+		margin-bottom: 30px;
+		max-height: 230px;
+	}
+}
