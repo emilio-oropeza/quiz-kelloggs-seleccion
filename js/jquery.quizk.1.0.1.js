@@ -48,9 +48,9 @@
 					$(".res-desc").text(resultados[mayor]);
 					$(".res-img").attr("src", urlIndepth+"images/Resultados/Monitos/"+mayor+".png");
 
-					var text = 'Me salio '+componentObj.jugadores[mayor]+' descubre quién eres tú';
-					var urlFacebook = 'https://www.facebook.com/sharer.php?s=100&p[url]=http://juanfutbol.com/indepth/quiz-kelloggs';
-					var ulrTwitter = 'https://twitter.com/share?via=juanfutbol&text='+text+'&url=http://juanfutbol.com/indepth/quiz-kelloggs';
+					var text = 'Me salio '+componentObj.jugadores[mayor]+' descubre que selección eres tú';
+					var urlFacebook = 'https://www.facebook.com/sharer.php?s=100&p[url]=http://juanfutbol.com/indepth/que-seleccion-eres';
+					var ulrTwitter = 'https://twitter.com/share?via=juanfutbol&text='+text+'&hashtags=KelloggsSueñaFútbol,PringlesViveFútbol,JFKelloggs&url=http://juanfutbol.com/indepth/que-seleccion-eres';
 					var share = "javascript:sharePopUp('fb', '')";
 					$("#twitter").attr("href", "javascript:sharePopUp('tw', '"+encodeURIComponent(ulrTwitter)+"')");
 					$("#face").attr("href", "javascript:sharePopUp('fb', '"+encodeURIComponent(urlFacebook)+"')");
