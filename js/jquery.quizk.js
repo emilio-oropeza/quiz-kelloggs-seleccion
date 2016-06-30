@@ -21,6 +21,7 @@
 						$("#portada").animate({
 							"margin-top": (-1*componentObj.height)
 						}, 1000);
+						componentObj.methods.resize();
 					});
 					componentObj.methods.displayPreguntas();
 					$(window).resize(componentObj.methods.resize);
