@@ -155,7 +155,7 @@ section{
 	.pregunta > img{
 		display: block;
 		margin-bottom: 30px;
-		max-height: 230px;
+		max-height: 340px;
 	}
 	#resultado > .container {
 	    height: 560px;
