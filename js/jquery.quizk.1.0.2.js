@@ -54,10 +54,6 @@
 					var share = "javascript:sharePopUp('fb', '')";
 					$("#twitter").attr("href", "javascript:sharePopUp('tw', '"+encodeURIComponent(ulrTwitter)+"')");
 					$("#face").attr("href", "javascript:sharePopUp('fb', '"+encodeURIComponent(urlFacebook)+"')");
-					var heightRowRes = $($("#resultado > .container > .row").get(0)).height();
-					heightRowRes += $($("#resultado > .container > .row").get(1)).height();
-					heightRowRes += $($("#resultado > .container > .row").get(2)).height();
-					$("#resultado > .container").height(heightRowRes);
 				},
 				next: function(i, val){					
 					var pos = i + 1;
@@ -67,7 +63,8 @@
 							"top": (-1*(componentObj.height*pos))
 						}, 1000);
 					}else{
-						componentObj.methods.getRes();						
+						componentObj.methods.getRes();
+						componentObj.methods.resize();				
 					}					
 				},
 				renderPreguntas: function(i, preguntaObj){
