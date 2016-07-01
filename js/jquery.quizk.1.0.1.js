@@ -54,8 +54,13 @@
 					var share = "javascript:sharePopUp('fb', '')";
 					$("#twitter").attr("href", "javascript:sharePopUp('tw', '"+encodeURIComponent(ulrTwitter)+"')");
 					$("#face").attr("href", "javascript:sharePopUp('fb', '"+encodeURIComponent(urlFacebook)+"')");
+					var heightRowRes = $($("#resultado > .container > .row").get(0)).height();
+					heightRowRes += $($("#resultado > .container > .row").get(1)).height();
+					heightRowRes += $($("#resultado > .container > .row").get(2)).height();
+					$("#resultado > .container").height(heightRowRes);
 				},
-				next: function(i, val){					var pos = i + 1;
+				next: function(i, val){					
+					var pos = i + 1;
 					componentObj.res[val]++;
 					if(pos < preguntas.length){
 						$("#preguntas-scroll").animate({
@@ -114,6 +119,10 @@
 					if( $("#preguntas").css("margin-top") != "0px" ){
 						$("#preguntas").css({"margin-top": (-1*componentObj.height)});
 					}
+					var heightRowRes = $($("#resultado > .container > .row").get(0)).height();
+					heightRowRes += $($("#resultado > .container > .row").get(1)).height();
+					heightRowRes += $($("#resultado > .container > .row").get(2)).height();
+					$("#resultado > .container").height(heightRowRes);
 				}
 			}
 		};
