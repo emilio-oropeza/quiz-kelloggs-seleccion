@@ -138,6 +138,10 @@ section{
 	    font-size: 15px;
 	    font-style: italic;
 	}
+	#img-btn-kel{
+		max-width: 392px;
+		width: 100%;
+	}
 @media screen and (max-height: 450px) {
 	#portada > .container > #portada-titulo{top: 10px;}
 	#portada > .container > #portada-btn{top: 75px;}
@@ -160,6 +164,9 @@ section{
 		display: block;
 		margin-bottom: 30px;
 		max-height: 340px;
+	}
+	#resultado{
+		background-size: cover;
 	}
 	#res-header{
 		margin-bottom: 50px;
